@@ -13,7 +13,7 @@ const userSchema = new mongoose.Schema(
     location: { type: String },
     profileurl: { type: String },
     profession: { type: String },
-    friends: [{ type: Schema.Types.ObjectId, ref: "User" }],
+    friends: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
     views: [{ type: String }],
     verified: { type: Boolean, default: false },
   },
